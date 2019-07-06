@@ -104,14 +104,16 @@ namespace CDSPracticalTests {
 
         [Fact]
         public void CanSort() {
-            throw new NotImplementedException();
+            int[] Array = { 11, 33, 5, -3, 19, 8, 49 };
+            int[] sortedArray = { -3, 5, 8, 11, 19, 33, 49 };
+            Assert.Equal(sortedArray, instance.Sort(Array));           
         }
 
         [Fact]
         public void CanSumFibonacciNumbers() {
             Assert.Equal(4613732, instance.FibonacciSum());
         }
-
+        
         [Fact]
         public void CanGenerateListOfNumbers() {
             var list = instance.GenerateList();
